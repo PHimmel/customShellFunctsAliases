@@ -50,17 +50,15 @@ read next
 if [[ ${next} = "Y" ]] ; then
     (sudo less /var/log/rkhunter.log) ; fi
 
-# AIDE program options
-#
-# compares current filesystem database with current filesystem
-echo "\n\nCompelete Root File System Modification Audit Started\n\n"
-sudo aide
+echo "\n\nAIDE Options:\ninit = 'i'\nupdate = 'u'\ncompare = 'c'"
+read aide
 
-# creates a new database of total filesystem 
-# sudo aide -i
-#
-# compares and updates new filesystem database with previous one
-# sudo aide -u 
+case "$aide" in
+    "i") echo "initializing database. . .\n" && sudo aide -i ;;
+    "u") echo "updating database. . .\n" && sudo aide -u ;;
+    "c") echo "comparing database with filesystem. . .\n" && sudo aide ;;
+    *) echo "\nSkipping AIDE analysis\n"
+esac
 
 printf "\n\nDone!\n\n"
 }
