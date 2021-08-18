@@ -1,8 +1,0 @@
-sshfs-reconnect.zsh
-personalAliases.zsh
-plugins/
-themes/
-./aliases.zsh.bak
-./example.zsh
-./personalAliases.zsh
-./.gitignore
