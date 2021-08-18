@@ -47,7 +47,7 @@ arch-audit
 echo "\n\nEnter 'Y' ro view malware log file\n\n" 
 read next
 
-if [[ ${next} -eq 'Y' ]] ; then
+if [[ ${next} = "Y" ]] ; then
     (sudo less /var/log/rkhunter.log) ; fi
 
 # AIDE program options
