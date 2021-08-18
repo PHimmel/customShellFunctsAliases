@@ -43,6 +43,10 @@ echo "\n\nEnter 'Y' ro view malware log file\n\n" ; read next
 if [[ ${next} = "Y" ]] ; then
     (sudo less /var/log/rkhunter.log) ; fi
 
+# AIDE checks for modified/added/deleted files throughout the total file system
+# it creates its own database/s to check against the previous database to detect 
+# said changes 
+# it is quite slow as it is reading/writing and comparing the ALL files
 echo "\n\nAIDE Options:\ninit = 'i'\nupdate = 'u'\ncompare = 'c'" ; read aide
 
 case "$aide" in
