@@ -1,31 +1,25 @@
 function _update () { 
 
-    # checks if package manager is present
+# checks if package manager is present
     function _pack_test() {
         local PACK=$1
         type $PACK && echo "\n${PACK}\n" && return 0 || return 1
     }
-
 # if package manager is present; evaulates to turn and executes proper command
 _pack_test "pacman" && (sudo pacman -Syu)
-
 _pack_test "yay" && (yay -Syu)
-
 _pack_test "snap" && (sudo snap refresh)
-
 _pack_test "flatpak" && (flatpak update)
 
 # option to run robust security check is offered
 echo "\nDone with updates\n\nWould you like to run \
-a full security check now?\nEnter 'Y' to continue.\n"
-read cont
+a full security check now?\nEnter 'Y' to continue.\n" ; read cont
+
 if [[ $cont = "Y" ]] ; then
     _security
 else echo "\n Okay all done! :D\n" ; fi
 }
-
 alias update=_update
-
 
 function _security () {
 
@@ -44,14 +38,12 @@ echo "\n\nPackage Vulernability Assessment Started\n\n"
 arch-audit
 
 # give option to view total malware log file
-echo "\n\nEnter 'Y' ro view malware log file\n\n" 
-read next
+echo "\n\nEnter 'Y' ro view malware log file\n\n" ; read next
 
 if [[ ${next} = "Y" ]] ; then
     (sudo less /var/log/rkhunter.log) ; fi
 
-echo "\n\nAIDE Options:\ninit = 'i'\nupdate = 'u'\ncompare = 'c'"
-read aide
+echo "\n\nAIDE Options:\ninit = 'i'\nupdate = 'u'\ncompare = 'c'" ; read aide
 
 case "$aide" in
     "i") echo "initializing database. . .\n" && sudo aide -i ;;
