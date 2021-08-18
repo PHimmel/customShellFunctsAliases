@@ -1,6 +1,6 @@
 function _update () { 
     function _pack_test() {
-        type ${1} && echo "\n${1}\n" && return 0 || return 1
+        type ${1} && return 0 || return 1
     }
 _pack_test "pacman" && (sudo pacman -Syu)
 _pack_test "yay" && (yay -Syu)
