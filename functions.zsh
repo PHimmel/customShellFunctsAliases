@@ -18,7 +18,7 @@ function _security () {
 cd "${HOME}/bin/lynis"
 sudo ./lynis audit system ; cd ~
 echo "\n\nMalware Scanning Started\n\n"
-sudo rkhunter --cronjob --report-warnings-only
+sudo rkhunter --check --report-warnings-only
 echo "\n\nPackage Vulernability Assessment Started\n\n"
 arch-audit
 echo "\n\nEnter 'Y' ro view malware log file\n\n" ; read next
