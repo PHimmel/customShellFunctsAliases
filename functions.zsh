@@ -6,7 +6,6 @@ _pack_test "pacman" && (sudo pacman -Syu)
 _pack_test "yay" && (yay -Syu)
 _pack_test "snap" && (sudo snap refresh)
 _pack_test "flatpak" && (flatpak update)
-
 echo "\nDone with updates\n\nWould you like to run \
 a full security check now?\nEnter 'Y' to continue.\n" ; read cont
 if [[ $cont = "Y" ]] ; then
@@ -18,17 +17,13 @@ alias update=_update
 function _security () {
 cd "${HOME}/bin/lynis"
 sudo ./lynis audit system ; cd ~
-
 echo "\n\nMalware Scanning Started\n\n"
 sudo rkhunter --cronjob --report-warnings-only
-
 echo "\n\nPackage Vulernability Assessment Started\n\n"
 arch-audit
-
 echo "\n\nEnter 'Y' ro view malware log file\n\n" ; read next
 if [[ ${next} = "Y" ]] ; then
     (sudo less /var/log/rkhunter.log) ; fi
-
 echo "\n\nAIDE Options:\ninit = 'i'\nupdate = 'u'\ncompare = 'c'" ; read aide
 case "$aide" in
     "i") echo "initializing database. . .\n" && sudo aide -i ;;
@@ -36,6 +31,5 @@ case "$aide" in
     "c") echo "comparing database with filesystem. . .\n" && sudo aide ;;
     *) echo "\nSkipping AIDE analysis\n"
 esac
-
 printf "\n\nDone!\n\n"
 }
