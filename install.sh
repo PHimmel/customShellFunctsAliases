@@ -1,5 +1,4 @@
 #!/bin/sh
-# echo "${PWD}, ${0}, ${SHELL}"
 
 echo "Install started. . .\n"
 
