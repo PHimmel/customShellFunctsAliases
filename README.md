@@ -1,4 +1,4 @@
-# Functions.zsh Info
+# updateAndSecurity.zsh Info
 ## General
 * Runs a software updater and system security check.
 * Designed for compatible Linux distributions (Arch Linux, LTS kernal here)
