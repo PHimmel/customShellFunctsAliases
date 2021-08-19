@@ -1,4 +1,10 @@
 # Functions.zsh Info
+## General
+* Runs a software updater and system security check.
+* Designed for compatible Linux distributions (Arch Linux, LTS kernal here)
+* Made for end-user to be able to easily complete these two important parts of system-management
+* Is run solely through terminal commands.
+
 Creates a shell alias for the two primary function for:
 1. Modularity, not to call the functions directly.
 2. Elevatation of env variable expansion to *highest possible value.*
