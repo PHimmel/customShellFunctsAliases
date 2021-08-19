@@ -26,7 +26,7 @@ Analysis of installed pacman packages, shows level of issue of package if there 
 * http://rkhunter.sourceforge.net/
 Malware scan, show only warnings.
 ### Lynis
-* https://github.com/CISOfy/Lynis
+[Lynis](https://github.com/CISOfy/Lynis)
 Full system security analysis.
 
 ## How to use
