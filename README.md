@@ -24,7 +24,8 @@ Uses a standard update command for each manager. Sudo is needed as they operate 
         * `flatpak update`
 
 ### Security function
-Executes 4 widely-used security packages to evaluate various aspects of the system.
+Based loosely off of key points from the ArchWiki [Security](https://wiki.archlinux.org/title/Security) section.
+it executes 4 widely-used security packages to evaluate various aspects of the system.
 #### AIDE
 [AIDE](https://aide.github.io/) 
 is used to:
