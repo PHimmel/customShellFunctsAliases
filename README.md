@@ -42,7 +42,7 @@ is a complete system malware scan, this application shows only warnings.
 [Lynis](https://github.com/CISOfy/Lynis)
 is a robust, full system security analysis tool.
 
-## How to use
+## How to Use
 Clone the repo (or simply copy the file/s directly), then:
 1. Simply source the file directly i.e. `source functions.zsh` or `. ./functions.zsh`
 2. Add it your terminal init section to autoload it each session.
@@ -51,5 +51,5 @@ Clone the repo (or simply copy the file/s directly), then:
 4. Call `security` to only run the system security check.
 
 ## install.sh
-Simplified installer script for the program. Enter `./installer.sh` to install.
+Simplified installer script for the program. Enter `./installer.sh` to install. Essentially does what is suggested in the 'How to Use' section.
 * If unable to execute script, be sure to run `chmod +x installer.sh` in the programs directory.
