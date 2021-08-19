@@ -52,4 +52,4 @@ Clone the repo (or simply copy the file/s directly), then:
 
 ## install.sh
 Simplified installer script for the program. Enter `./installer.sh` to install.
-* If unable to execute script, be sure to run `chmod +x installer.sh`
+* If unable to execute script, be sure to run `chmod +x installer.sh` in the programs directory.
