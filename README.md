@@ -4,18 +4,18 @@ Creates a shell alias for the two primary function for:
 2. Elevatation of env variable expansion to *highest possible value.*
 
 ## Update
-Checks if common package managers are present and updates found ones.
+Checks if common **package managers** are present and updates found ones.
 
 ## Security
-### * AIDE 
-Checks for modified/added/deleted files throughout the total file system.
-It creates its own database/s to check against the previous database to detect changes.
-It is quite slow as it is reading/writing and comparing the ALL files.
-### * Arch-Audit
+### AIDE 
+* Checks for modified/added/deleted files throughout the total file system.
+* It creates its own database/s to check against the previous database to detect changes.
+* It is quite slow as it is reading/writing and comparing the ALL files.
+### Arch-Audit
 Analysis of installed pacman packages, shows level of issue of package if there is one.
-### * Rkhunter
+### Rkhunter
 Malware scan, show only warnings.
-### * Lynis
+### Lynis
 Full system security analysis.
 
 ## How to use
