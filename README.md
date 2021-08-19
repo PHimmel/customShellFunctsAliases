@@ -34,13 +34,13 @@ is used to:
 * It is quite slow as it is reading/writing and comparing ***All*** the files.
 #### Arch-Audit
 [Arch-Audit](https://github.com/ilpianista/arch-audit)
-offer an analysis of installed pacman packages, shows level of issue of package if there is one.
+offers an analysis of all installed **pacman** packages, shows level of issue of package if there is one.
 #### Rkhunter
 [Rkhunter](http://rkhunter.sourceforge.net/)
-is a complete malware scan, shows only warnings here.
+is a complete system malware scan, this application shows only warnings.
 #### Lynis
 [Lynis](https://github.com/CISOfy/Lynis)
-is a full system security analysis.
+is a robust, full system security analysis tool.
 
 ## How to use
 Clone the repo (or simply copy the file/s directly), then:
