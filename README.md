@@ -5,7 +5,7 @@
 * Made for end-user to be able to easily complete these two important parts of system-management
 * Is run solely through terminal commands.
 
-Creates a shell alias for the two primary function for:
+Creates two shell aliases(`update`, `security`) for:
 1. Modularity, not to call the functions directly.
 2. Elevatation of env variable expansion to *highest possible value.*
 
