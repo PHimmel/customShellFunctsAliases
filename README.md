@@ -31,7 +31,7 @@ it executes 4 widely-used security packages to evaluate various aspects of the s
 is used to:
 * Checks for modified/added/deleted files throughout the total file system.
 * It creates its own database/s to check against the previous database to detect changes.
-* It is quite slow as it is reading/writing and comparing the ***All*** files.
+* It is quite slow as it is reading/writing and comparing ***All*** the files.
 #### Arch-Audit
 [Arch-Audit](https://github.com/ilpianista/arch-audit)
 offer an analysis of installed pacman packages, shows level of issue of package if there is one.
