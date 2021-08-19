@@ -12,7 +12,7 @@ if [[ $cont = "Y" ]] ; then
     _security
 else echo "\n Okay all done! :D\n" ; fi
 }
-
+# alias creation
 alias update=_update
 
 function _security () {
