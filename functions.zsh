@@ -14,6 +14,7 @@ else echo "\n Okay all done! :D\n" ; fi
 }
 # alias creation
 alias update=_update
+alias security=_security
 
 function _security () {
 cd "${HOME}/bin/lynis"
