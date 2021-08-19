@@ -1,1 +1,0 @@
-1. Utilize _pack_test function to check if _security programs are present/accessible in the system.
