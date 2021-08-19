@@ -49,3 +49,6 @@ Clone the repo (or simply copy the file/s directly), then:
 
 3. Call `update` to run the updater with interactive security check option.
 4. Call `security` to only run the system security check.
+
+## install.sh
+Simplified installer script for the program
