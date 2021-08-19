@@ -20,13 +20,13 @@ https://aide.github.io/
 * It creates its own database/s to check against the previous database to detect changes.
 * It is quite slow as it is reading/writing and comparing the ALL files.
 ### Arch-Audit
-https://github.com/ilpianista/arch-audit
-\nAnalysis of installed pacman packages, shows level of issue of package if there is one.
+* https://github.com/ilpianista/arch-audit
+Analysis of installed pacman packages, shows level of issue of package if there is one.
 ### Rkhunter
-http://rkhunter.sourceforge.net/
+* http://rkhunter.sourceforge.net/
 Malware scan, show only warnings.
 ### Lynis
-https://github.com/CISOfy/Lynis
+* https://github.com/CISOfy/Lynis
 Full system security analysis.
 
 ## How to use
