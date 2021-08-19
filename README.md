@@ -6,7 +6,7 @@ Creates a shell alias for the two primary function for:
 ## Update
 Checks if common **package managers** are present and updates found ones.
 Uses standard update command for each manager.
-Looks for (executes if found):
+Looks for (command executed if found):
 1. Pacman `sudo pacman -Syu`
 2. Yay `yay -Syu`
 3. Snap `sudo snap refresh`
@@ -21,7 +21,7 @@ https://aide.github.io/
 * It is quite slow as it is reading/writing and comparing the ALL files.
 ### Arch-Audit
 https://github.com/ilpianista/arch-audit
-Analysis of installed pacman packages, shows level of issue of package if there is one.
+\nAnalysis of installed pacman packages, shows level of issue of package if there is one.
 ### Rkhunter
 http://rkhunter.sourceforge.net/
 Malware scan, show only warnings.
