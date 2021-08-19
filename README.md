@@ -37,8 +37,9 @@ is a complete malware scan, shows only warnings here.
 is a full system security analysis.
 
 ## How to use
-Simply source the file directly (i.e. `source functions.zsh`).
-Add it your terminal init section to autoload it each session.
+Clone the repo (or simply copy the file/s directly), then:
+1. Simply source the file directly i.e. `source functions.zsh` or `. ./functions.zsh`
+2. Add it your terminal init section to autoload it each session.
 
-Just call `update` to run the updater with interactive security check option.
-Call `security` to only run the system security check.
+3. Call `update` to run the updater with interactive security check option.
+4. Call `security` to only run the system security check.
