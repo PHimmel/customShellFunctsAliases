@@ -13,10 +13,10 @@ Creates two shell aliases(`update`, `security`) for:
 Checks if common **package managers** are present and updates found ones.
 Uses a standard update command for each manager. Sudo is needed as they operate system-wide.
 * Looks for (command executed if found):
-1. Pacman `sudo pacman -Syu`
-2. Yay `yay -Syu`
-3. Snap `sudo snap refresh`
-4. Flatpak `flatpak update`
+    1. Pacman `sudo pacman -Syu`
+    2. Yay `yay -Syu`
+    3. Snap `sudo snap refresh`
+    4. Flatpak `flatpak update`
 
 ## Security
 Executes 4 widely-used security packages to evaluate various aspects of the system.
