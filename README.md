@@ -51,4 +51,5 @@ Clone the repo (or simply copy the file/s directly), then:
 4. Call `security` to only run the system security check.
 
 ## install.sh
-Simplified installer script for the program
+Simplified installer script for the program. Enter `./installer.sh` to install.
+* If unable to execute script, be sure to run `chmod +x installer.sh`
