@@ -19,8 +19,8 @@ Malware scan, show only warnings.
 Full system security analysis.
 
 ## How to use
-Simply source the file directly (i.e. `source functions.zsh`)
-Or add it your terminal init section to autoload it each session.
+Simply source the file directly (i.e. `source functions.zsh`).
+Add it your terminal init section to autoload it each session.
 
 Just call `update` to run the updater with interactive security check option.
-Or call `security` to only run the system security check.
+Call `security` to only run the system security check.
