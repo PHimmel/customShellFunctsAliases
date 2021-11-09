@@ -5,7 +5,7 @@ function _update () {
 _pack_test "pacman" && (sudo pacman -Syu)
 _pack_test "yay" && (yay -Syu)
 _pack_test "snap" && (sudo snap refresh)
-_pack_test "flatpak" && (flatpak update)
+_pack_test "flatpak" && (flatpak update -y)
 
 echo "\nDone with updates\n\nWould you like to run \
 a full security check now?\nEnter 'Y' to continue.\n" ; read cont
